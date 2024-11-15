@@ -94,7 +94,7 @@
                 <h1>
                   Hi,<br />
                   <span id="typed-strings">
-                    <span>I'm Santiago Castrillón</span>
+                    <span>I'm Santiago Castrillon</span>
                     <span>Back-End Dev</span>
                     <span>Welcome to my portfolio</span>
                   </span>
@@ -108,21 +108,24 @@
     </div>
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script type="text/javascript" src="./main.70a66962.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 
     <!-- Script optimizado para el parallax y typing -->
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        // Inicialización del efecto typing
-        const typed = new Typed("#typed", {
+      document.addEventListener("DOMContentLoaded", function () {
+        new Typed("#typed", {
           stringsElement: "#typed-strings",
-          typeSpeed: 50,
-          backSpeed: 30,
-          loop: true,
-          startDelay: 1000,
-          showCursor: true,
-          cursorChar: "|",
+          typeSpeed: 50, // Velocidad de escritura
+          backSpeed: 30, // Velocidad de borrado
+          startDelay: 1500, // Retardo antes de empezar
+          backDelay: 1500, // Tiempo de espera antes de borrar
+          loop: true, // Hacer que se repita
+          showCursor: true, // Mostrar el cursor parpadeante
+          cursorChar: "|", // Carácter del cursor
+          autoInsertCss: true, // Insertar CSS automáticamente
+          fadeOut: true, // Efecto de desvanecimiento
+          fadeOutClass: "typed-fade-out",
+          fadeOutDelay: 500,
         });
 
         // Efecto Parallax optimizado
@@ -186,12 +189,8 @@
       });
     </script>
 
-    <!-- Scripts al final del body -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- jQuery -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- Bootstrap JS -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
