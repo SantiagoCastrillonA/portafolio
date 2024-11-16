@@ -5182,13 +5182,17 @@ textarea {
     background-position: center;
 }
 
-
 /* Asegúrate de que el contenedor tenga el estilo adecuado */
 #typed {
-  display: inline-block;
-  font-size: 80px;  /* Ajusta el tamaño de la fuente según lo necesites */
+  display: flex;
+    /* Ajusta el tamaño de la fuente según lo necesites */
   font-weight: 50;  /* Puedes ajustar el peso de la fuente si es necesario */
   color: white;  /* Color del texto */
   text-align: center;  /* Alineación del texto */
-  white-space: nowrap;  /* Para evitar que el texto se rompa en varias líneas */
+  /*white-space: nowrap;  /* Para evitar que el texto se rompa en varias líneas */
+  text-align: left;
+}
+
+.text-content {
+  font-size: 5em;
 }
