@@ -107,21 +107,19 @@
       </div>
     </div>
 
-    <!-- Scripts -->
-    <script type="text/javascript" src="index.js"></script>
 
     <!-- Script optimizado para el parallax y typing -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         new Typed("#typed", {
           stringsElement: "#typed-strings",
-          typeSpeed: 50, // Velocidad de escritura
-          backSpeed: 30, // Velocidad de borrado
+          typeSpeed: 100, // Velocidad de escritura
+          backSpeed: 20, // Velocidad de borrado
           startDelay: 1500, // Retardo antes de empezar
           backDelay: 1500, // Tiempo de espera antes de borrar
           loop: true, // Hacer que se repita
           showCursor: true, // Mostrar el cursor parpadeante
-          cursorChar: "|", // Carácter del cursor
+          cursorChar: "", // Carácter del cursor
           autoInsertCss: true, // Insertar CSS automáticamente
           fadeOut: true, // Efecto de desvanecimiento
           fadeOutClass: "typed-fade-out",
