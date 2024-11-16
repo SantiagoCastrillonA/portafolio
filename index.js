@@ -1,3 +1,19 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const hamburgerMenu = document.getElementById('hamburger-menu');
+  const navbarCollapse = document.getElementById('navbar-collapse');
+
+  hamburgerMenu.addEventListener('click', function() {
+    if (navbarCollapse.classList.contains('collapse')) {
+      navbarCollapse.classList.remove('collapse');
+      navbarCollapse.classList.add('in');
+    } else {
+      navbarCollapse.classList.remove('in');
+      navbarCollapse.classList.add('collapse');
+    }
+  });
+});
+
+
 document.addEventListener("DOMContentLoaded", () => {
     // Inicialización del efecto typing
     if (!window.typed) {
